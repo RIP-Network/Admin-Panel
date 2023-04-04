@@ -119,7 +119,7 @@ def sub_manual():
 
     
 
-    links = open('.sub.txt', 'r').read().split()
+    links = open('subdomain.txt', 'r').read().split()
 
     for link in links:
 
@@ -156,7 +156,7 @@ def manual_list():
 
     print('['+Fore.GREEN+'*'+Fore.WHITE+'] Objetivo >>> '+Fore.GREEN+''+target_url)
 
-    links = open('.link.txt', 'r').read().split()
+    links = open('adminpanel.txt', 'r').read().split()
 
     for link in links:
         def heders():
