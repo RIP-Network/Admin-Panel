@@ -139,7 +139,7 @@ def sub_manual():
 
         try:
             get_req = req.get(url, timeout=5, headers=heders1)
-            print(f'['+Fore.GREEN+'OK'+Fore.WHITE+'] OK - URL > %s%s {} %s'.format(url) % (fg('black'), bg('green'), attr('reset')))
+            print(f'['+Fore.GREEN+'OK'+Fore.WHITE+'] FOUND - URL > %s%s {} %s'.format(url) % (fg('black'), bg('green'), attr('reset')))
         
         except Exception:
             print(f'['+Fore.RED+'NOT'+Fore.WHITE+'] FAIL - URL > %s%s {} %s'.format(url) % (fg('black'), bg('red'), attr('reset')))
@@ -179,7 +179,7 @@ def manual_list():
 
         try:
             if get_req.status_code < sisad:
-                print(f'['+Fore.GREEN+'OK'+Fore.WHITE+'] OK - URL > %s%s {} %s'.format(url) % (fg('black'), bg('green'), attr('reset')))
+                print(f'['+Fore.GREEN+'OK'+Fore.WHITE+'] FOUND - URL > %s%s {} %s'.format(url) % (fg('black'), bg('green'), attr('reset')))
             
             if get_req.status_code > charsad:
                 print(f'['+Fore.RED+'NOT'+Fore.WHITE+'] FAIL - URL > %s%s {} %s'.format(url) % (fg('black'), bg('red'), attr('reset')))
